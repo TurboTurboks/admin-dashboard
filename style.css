@@ -1,0 +1,34 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+
+.header{
+    display: flex;
+background-color: aqua;
+
+grid-column: 2;
+grid-row: 1;
+}
+
+.sidebar{
+background-color: red;
+
+display: flex;
+flex-direction: column;
+
+grid-column: 1;
+grid-row: 1 / 3;
+
+}
+.main-content{
+    background-color: purple;
+
+
+
+grid-column: 2;
+grid-row: 2;
+
+}
