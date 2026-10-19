@@ -7,11 +7,15 @@ body {
 }
 
 .header {
-    display: flex;
+
     background-color: #FFFFFF;
 
     grid-column: 2;
     grid-row: 1;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
 }
 
 .sidebar {
@@ -23,7 +27,7 @@ body {
     grid-row: 1 / 3;
     
     padding-left: 20px;
-    gap: 30px;
+    gap: 50px;
 
     color: white;
 
@@ -56,7 +60,7 @@ body {
 }
 
 .projects h3 {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .projects > div {
@@ -84,9 +88,12 @@ body {
 }
 
 ul{
+    display: flex;
+    flex-direction: column;
     padding: 0px;
     margin: 0px;
     justify-content: center;
+    gap: 20px;
 }
 
 li {
@@ -109,13 +116,87 @@ li {
 }
 
 .project h3{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 800;
     margin-bottom: 0px;
     align-content: end;
 }
 .project p{
     margin-top: 0px;
-    font-size: 20px;
+    font-size: 18px;
     color: #666363;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.sidebar li a {
+    color: white;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.sidebar li a p {
+    margin: 0;
+}
+
+.header > div{
+    display: flex;
+    padding: 20px 50px;
+    gap: 10px;
+}
+
+input{
+    padding: 0px 20px;
+    border: 5px #E2E8F0 solid;
+    border-radius: 50px;
+    background-color: #E2E8F0;
+    width: 100%;
+    font-size: large;
+    height: 20px;
+}
+
+.header img{
+    border-radius: 50px;
+}
+.header > :nth-child(2){
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.header > :nth-child(3){
+    align-items: center;
+    gap: 30px;
+
+}
+
+.greetings{
+    font-size: 20px;
+}
+
+.greetings p{
+    margin: 5px 0px;
+}
+.greetings span{
+    font-weight: 800;
+}
+
+.header > :nth-child(4){
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+}
+
+button{
+    background-color: #1992D4;
+    border: #1992D4 solid 5px;
+    border-radius: 50px;
+    height: 40px;
+    width: 100px;
+    color: white;
+    font-size: large;
 }
