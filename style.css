@@ -65,7 +65,7 @@ body {
 
 .projects > div {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
 }
 
@@ -145,7 +145,7 @@ a {
 
 .header > div{
     display: flex;
-    padding: 20px 50px;
+    padding: 10px 50px;
     gap: 10px;
 }
 
@@ -199,4 +199,65 @@ button{
     width: 100px;
     color: white;
     font-size: large;
+}
+.announcements{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.announcements > div{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 30px;
+    box-shadow: 2px 2px 3px gray;
+    
+}
+
+h3{
+    font-size: 20px;
+}
+
+.announcements h4{
+    margin-bottom: 0px;
+}
+
+.announcements p{
+    margin-top: 0px;
+}
+
+.announcements > div > :nth-child(2){
+    border-top: 1px solid #666363;
+    border-bottom: 1px solid #666363;
+}
+
+.trending{
+    margin: 20px;
+}
+
+.trending > div{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: 2px 2px 3px gray;
+}
+
+.trending > div > div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0px;
+}
+
+.trending span{
+    color: black;
+}
+
+.trending p{
+    margin: 0px;
+    color: gray;
+}
+
+.trending img{
+    border-radius: 50px;
 }
